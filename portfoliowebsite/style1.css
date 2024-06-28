@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+}
+
+/*Navigation bar*/
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1vw 8vw;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.15);
+    z-index: 999;
+    cursor: pointer;
+}
+
+nav .Navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+}
+
+nav .Navigation ul li{
+    list-style: none;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+nav .Navigation ul li a{
+    text-decoration: none;
+    color: rgb(21,21,100);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+nav .Navigation ul li a:active{
+    color: #eb4f06;
+}
+
+nav .Navigation ul li a:hover{
+    color: #FDC93B;
+}
+
+/*About*/
+
+#About{
+    background-color: #ffffff;
+   /* margin-top: 2%;*/
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#About img{
+    margin-top: -10%;
+    width: 25%;
+    display: flex;
+    float: left;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#About .bio{
+    margin-top: -15%;
+    padding-left: 20%;
+    float: right;
+    width: 65%;
+    color: black;
+    font-size: 1.4em;
+    letter-spacing: 1px;
+}
+
+/* Skills */
+#Keyskills {
+    background-color: #ffffff;
+    padding: 20px;
+    height: 200%;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#Keyskills h2 {
+    font-size: 2em;
+    margin-top: 5%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Keyskills h2 img {
+    margin-left: 10px;
+    width: 50px;
+    height: 40px;
+}
+
+/* Skills container */
+.Skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* Individual skill styling */
+.S1, .S2, .S3, .S4, .S5, .S6 {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    height: 400px;
+    padding: 15px;
+    margin-top: 2%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.S1 img, .S2 img, .S3 img, .S4 img, .S5 img, .S6 img {
+    width: 95px; 
+    height: 80px; 
+    margin-bottom: 20px;
+}
+
+.S1 p, .S2 p, .S3 p, .S4 p, .S5 p, .S6 p {
+    font-size: 1.0em;
+    color: #333;
+    line-height: 1.5em;
+}
+
+/* Hover effect */
+.S1:hover, .S2:hover, .S3:hover, .S4:hover, .S5:hover, .S6:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/*Experties*/
+
+#Experties{
+    margin-top: 0%;
+}
+
+#Experties h2 {
+    font-size: 2em;
+    margin-top: 5%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Experties h2 img{
+    padding-left: 5px;
+    padding-bottom: 2px;
+    width: 50px;
+    height: 70px;
+}
+
+.lang{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+    gap: 40px;
+    padding-bottom: 15%;
+}
+
+.L1, .L2, .L3 {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    height: 400px;
+    padding: 15px;
+    margin-top: 2%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.L1 img, .L2 img, .L3 img{
+    width:150px;
+    height: 150px;
+    padding-bottom: 2%;
+}
+
+.L1 p, .L2 p, .L3 p{
+    font-size: 1.0em;
+    color: #333;
+    line-height: 1.5em;
+}
+
+.L1:hover, .L2:hover, .L3:hover{
+    transform: translate(-10px);
+    box-shadow: 0 6px 12px rgba(180, 12, 12, 0.15);
+}
+
+/*Project section*/
+
+#Projects {
+    margin: 0;;
+    margin-bottom: 20%;
+}
+
+#Projects h2 {
+    font-size: 2em;
+    color: #4d63b1;
+    padding-top: 5%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Projects h2 img{
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    width: 50px;
+    height: 50px;
+}
+
+.P1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+    gap: 40px;
+    padding-bottom: 5%;
+    padding-left: -25px ;
+    padding-right: 40px;
+}
+
+.P1 h3{
+    font-size: 2em;
+    color: #aa542d;
+    margin-top: 5%;
+    margin-bottom: 20px;
+    padding-left: -15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.B1, .B2, .B3, .B4{
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    width: 550px;
+    height: 450px;
+    padding: 15px;
+    margin-top: 2%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.B1 img, .B2 img, .B3 img, .B4 img{
+    width: 220px;
+    height: 150px;
+    padding-bottom: 1%;
+}
+
+.B1 p, .B2 p, .B3 p, .B4 p{
+    font-size: 1.0em;
+    color: #333;
+    line-height: 1.5rem;
+    padding-top: 16px;
+}
+
+.B1:hover, .B2:hover, .B3:hover, .B4:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.P2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    height: 200px;
+    gap: 40px;
+    padding-bottom: 20%;
+    padding-top: -20px;
+    
+}
+
+.P2 h3{
+    font-size: 2em;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 180px;
+}
+
+.T1, .T2, .T3, .T4, .T5, .T6, .T7{
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    float: left;
+    padding-left: -20px;
+    width: 390px;
+    height: 480px;
+    margin-top: 2%;
+    text-align: center;
+    transition: transform 0,3s;
+}
+
+.T1 img, .T2 img, .T3 img, .T4 img, .T5 img, .T6 img, .T7 img{
+    width: 250px;
+    height: 150px;
+    margin-top: 4%;
+    padding-bottom: 3%;
+}
+
+.T1 p, .T2 p, .T3 p, .T4 p, .T5 p, .T6 p, .T7 p{
+    font-size: 1.0em;
+    color: #333;
+    line-height: 1.5rem;
+    padding: 16px;
+    padding-bottom:25px ;
+}
+
+.T1:hover, .T2:hover, .T3:hover, .T4:hover, .T5:hover, .T6:hover, .T7:hover{
+    transform: translate(-10px);
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+}
